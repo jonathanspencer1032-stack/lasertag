@@ -2175,7 +2175,7 @@
 	)
 	(rectangle
 		(start 86.36 16.51)
-		(end 130.81 57.15)
+		(end 142.24 57.15)
 		(stroke
 			(width 0)
 			(type default)
@@ -2380,6 +2380,12 @@
 		(uuid "89a53294-d603-4366-80c5-7563c2d6d9e6")
 	)
 	(junction
+		(at 125.73 38.1)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8d03ae1f-0a5c-47b5-aae9-0056978d367a")
+	)
+	(junction
 		(at 185.42 96.52)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2414,6 +2420,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c3708bcc-8422-48fa-aad7-9167e779861b")
+	)
+	(junction
+		(at 119.38 82.55)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c4be2c2d-2535-4f06-9448-a1de2d22a57a")
 	)
 	(junction
 		(at 105.41 38.1)
@@ -2691,7 +2703,7 @@
 	)
 	(wire
 		(pts
-			(xy 116.84 38.1) (xy 123.19 38.1)
+			(xy 116.84 38.1) (xy 125.73 38.1)
 		)
 		(stroke
 			(width 0)
@@ -2811,7 +2823,7 @@
 	)
 	(wire
 		(pts
-			(xy 113.03 82.55) (xy 120.65 82.55)
+			(xy 113.03 82.55) (xy 119.38 82.55)
 		)
 		(stroke
 			(width 0)
@@ -2988,6 +3000,26 @@
 			(type default)
 		)
 		(uuid "8d8f989d-5a06-4cf9-b31e-d1d0f934aaba")
+	)
+	(wire
+		(pts
+			(xy 125.73 38.1) (xy 134.62 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9018bb1d-c6ed-402c-9be6-c05006fdf357")
+	)
+	(wire
+		(pts
+			(xy 119.38 82.55) (xy 120.65 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "94147be1-b5d3-47e6-904c-2ef15ff0b24f")
 	)
 	(wire
 		(pts
@@ -3340,7 +3372,7 @@
 		(uuid "3a037dc7-5051-436e-adc4-2e4e216f953c")
 	)
 	(label "a_gnd"
-		(at 123.19 38.1 0)
+		(at 134.62 38.1 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3981,6 +4013,72 @@
 	)
 	(symbol
 		(lib_id "power:GND")
+		(at 119.38 87.63 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "376e745f-ba0a-4f51-a216-b8c6e017c512")
+		(property "Reference" "#PWR06"
+			(at 119.38 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 119.38 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 119.38 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 119.38 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 119.38 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f1e22a8f-8e41-496d-a501-8698e53d0a6b")
+		)
+		(instances
+			(project "lasertagpcb"
+				(path "/8d9d5a57-74c7-4ce7-b2b8-e1e77a080431"
+					(reference "#PWR06")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
 		(at 92.71 49.53 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -4246,6 +4344,76 @@
 			(project "lasertagpcb"
 				(path "/8d9d5a57-74c7-4ce7-b2b8-e1e77a080431"
 					(reference "C3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small_US")
+		(at 119.38 85.09 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4bc4be9f-b1a0-4a28-a7d7-1981414c5adc")
+		(property "Reference" "C9"
+			(at 121.92 83.9469 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100 nF"
+			(at 121.92 86.4869 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
+			(at 119.38 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 119.38 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "capacitor, small US symbol"
+			(at 119.38 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "51e1819d-7ca6-41b1-b6f5-da0f40f11245")
+		)
+		(pin "2"
+			(uuid "3f633b26-7e4a-4c30-9560-54bf1b22afd1")
+		)
+		(instances
+			(project "lasertagpcb"
+				(path "/8d9d5a57-74c7-4ce7-b2b8-e1e77a080431"
+					(reference "C9")
 					(unit 1)
 				)
 			)
@@ -5343,6 +5511,142 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:C_Small_US")
+		(at 125.73 40.64 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a3b8378d-72ef-4b1c-a810-7eaa0f84d6b5")
+		(property "Reference" "C10"
+			(at 128.27 39.4969 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100 nF"
+			(at 128.27 42.0369 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
+			(at 125.73 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 125.73 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "capacitor, small US symbol"
+			(at 125.73 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "56b59655-ad5b-4658-a860-71c479d0fd8a")
+		)
+		(pin "2"
+			(uuid "be15292c-d7c3-41d0-8392-332e19f8ebe3")
+		)
+		(instances
+			(project "lasertagpcb"
+				(path "/8d9d5a57-74c7-4ce7-b2b8-e1e77a080431"
+					(reference "C10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 125.73 43.18 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a962023d-28fe-44cc-ad4d-bc14649211e5")
+		(property "Reference" "#PWR08"
+			(at 125.73 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 125.73 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 125.73 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 125.73 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 125.73 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "185b679c-5094-4b09-a99c-ca15c965b4e4")
+		)
+		(instances
+			(project "lasertagpcb"
+				(path "/8d9d5a57-74c7-4ce7-b2b8-e1e77a080431"
+					(reference "#PWR08")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+3V3")
 		(at 251.46 55.88 0)
 		(unit 1)
@@ -5483,7 +5787,6 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "b28e4d5f-9ff0-47ce-a364-331f9f36dd7f")
 		(property "Reference" "C8"
 			(at 118.11 42.0369 0)
@@ -5495,7 +5798,7 @@
 			)
 		)
 		(property "Value" "0.1 uF"
-			(at 118.11 44.5769 0)
+			(at 117.602 44.704 0)
 			(effects
 				(font
 					(size 1.27 1.27)
